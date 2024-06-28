@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>leaflet demo</title>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+<style type="text/css">
+	html, body, #map {
+		height:512px;
+		width:512px;
+		margin:0px;
+		padding:0px;
+		overflow:hidden;
+	}
+	
+	#map {
+		background:#c0c0c0;
+		color:#CC6600
+	}
+</style>
+
+</head>
+
+<body>
+<!-- Leaflet Include file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+
+<div id="map">
+<script>
+	/**
+	* @func		map:						initialize the leaflet widget L*
+	* @param	$div			STRING		elementname of the div where the widget shows up
+	* @param	$settings		JSON[]		options to configure leaflet widget
+	* @result	$map			POINTER*	reference to leaflet widget
+	**/
+	var map = L.map('map',
+					{maxZoom:12,minZoom:3});
+	
+</script>
+
+</div>  
+</body>
+</html>
